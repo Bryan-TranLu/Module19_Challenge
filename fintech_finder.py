@@ -168,18 +168,21 @@ st.sidebar.markdown("## Candidate Profile")
 candidate = candidate_database[person][0]
 
 # Write the Fintech Finder candidate's name to the sidebar
+# Custom code: Changed for asthetics.
 st.sidebar.write("#### Candidate Name:  ", candidate)
 
 # Identify the FinTech Finder candidate's hourly rate
 hourly_rate = candidate_database[person][3]
 
 # Write the inTech Finder candidate's hourly rate to the sidebar
+# Custom code: Changed for asthetics.
 st.sidebar.write("#### Hourly Rate:  ", hourly_rate)
 
 # Identify the FinTech Finder candidate's Ethereum Address
 candidate_address = candidate_database[person][1]
 
 # Write the inTech Finder candidate's Ethereum Address to the sidebar
+# Custom code: Changed for asthetics.
 st.sidebar.markdown("#### Ethereum Address:")
 st.sidebar.write(candidate_address)
 
