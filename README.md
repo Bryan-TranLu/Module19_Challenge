@@ -1,6 +1,10 @@
 ## Module 19 Challenge
 Submission for Bryan Tran Lu. 
 
+## Note to Grader
+* The `def generate_account()` function modified to create a new mnemonic each time. It is understood that this is method is not advised or secure but was added to ensure that the script runs.
+* Since a new account is created each time, there is a balance of zero ether and thus an error of 'insufficient funds for gas' occurs when a transaction is made. However, when another ganache address is used the transaction works.
+
 ## Instructions
 The application script is in `fintech_finder.py` and the required functions are in `crypto_wallet.py`.
 
