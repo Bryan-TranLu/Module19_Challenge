@@ -5,12 +5,10 @@ Submission for Bryan Tran Lu.
 
 
 ## Instructions
-The py file is under `fintech_finder.py`.
+The application script is in `fintech_finder.py` and the required functions are in `crypto_wallet.py`.
 
-1) To launch the Streamlit application, type:
-```python
-streamlit run fintech_finder.py
-```
+1) To launch the Streamlit application, type `streamlit run fintech_finder.py`
+
 2) On the resulting webpage, select a candidate that you would like to hire from the appropriate drop-down menu. Then, enter the number of hours that you would like to hire them for.
 
 3) Click the Send Transaction button to sign and send the transaction with your Ethereum account information. If the transaction is successfully communicated to Ganache, validated, and added to a block, a resulting transaction hash code will be written to the Streamlit application sidebar.
