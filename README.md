@@ -1,9 +1,6 @@
 ## Module 19 Challenge
 Submission for Bryan Tran Lu. 
 
-## Description
-
-
 ## Instructions
 The application script is in `fintech_finder.py` and the required functions are in `crypto_wallet.py`.
 
