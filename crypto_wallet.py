@@ -9,7 +9,7 @@ import os
 import requests
 from mnemonic import Mnemonic
 from dotenv import load_dotenv
-load_dotenv()
+load_dotenv("SAMPLE.env")
 from bip44 import Wallet
 from web3 import Account
 from web3 import middleware
@@ -23,11 +23,11 @@ def generate_account():
     # Fetch mnemonic from environment variable.
     mnemonic = os.getenv("MNEMONIC")
     
-    # Student code: Function modified to create a new mnemonic each time.
-    # Understand that this is not secure but was added to ensure that the script runs.
-    if mnemonic is None:
-        mnemo = Mnemonic("english")
-        mnemonic = mnemo.generate(strength=128)
+    # # Student code: Function modified to create a new mnemonic each time.
+    # # Understand that this is not secure but was added to ensure that the script runs.
+    # if mnemonic is None:
+    #     mnemo = Mnemonic("english")
+    #     mnemonic = mnemo.generate(strength=128)
 
     # Create Wallet Object
     wallet = Wallet(mnemonic)
@@ -63,7 +63,7 @@ def send_transaction(w3, account, to, wage):
     # Calculate gas estimate
     gasEstimate = w3.eth.estimateGas(
         {"to": to, 
-         "from": account.address, 
+         "from": account.address,
          "value": value
         }
     )
@@ -74,7 +74,7 @@ def send_transaction(w3, account, to, wage):
         "from": account.address,
         "value": value,
         "gas": gasEstimate,
-        "gasPrice": 0,
+        "gasPrice": 875000000,
         "nonce": w3.eth.getTransactionCount(account.address)
     }
 
