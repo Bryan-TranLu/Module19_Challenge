@@ -1,9 +1,6 @@
 ## Module 19 Challenge
 Submission for Bryan Tran Lu. 
 
-## Note to Grader
-* The `def generate_account()` function modified to create a new mnemonic each time. It is understood that this is method is not advised or secure but was added to ensure that the script runs.
-
 ## Instructions
 The application script is in `fintech_finder.py` and the required functions are in `crypto_wallet.py`.
 
@@ -40,6 +37,11 @@ from crypto_wallet import generate_account, get_balance, send_transaction
 Input areas for the user interface of the Streamlit application.
 
 <a href="" target="_blank" rel="noreferrer"><img src="Images/Fintech_Finder.png" width="" height="300" alt="" /></a>
+
+Screenshot of validated transaction hash:
+
+<a href="" target="_blank" rel="noreferrer"><img src="Images/validated_transaction_hash.png" width="" height="300" alt="" /></a>
+
 
 ## Authors and Support
 If there are any questions regarding the assignment, please reach out via email.
